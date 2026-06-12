@@ -369,44 +369,85 @@ Generates:
 
 ---
 
-# 📂 Project Structure
+## 📂 Project Structure
 
 ```text
 Airline-Retention-Intelligence/
 
 │
+├── Readme.md
+│
 ├── app/
-│
+│   │
 │   ├── Home.py
+│   │
+│   ├── pages/
+│   │   │
+│   │   ├── 01_Overview.py
+│   │   ├── 02_Forecast.py
+│   │   ├── 03_Retention_Strategy.py
+│   │   ├── 04_Ai_Executive_Summary.py
+│   │   ├── 05_Customer_Message.py
+│   │   └── 06_Report_Export.py
+│   │
+│   └── testing/
+│       │
+│       ├── inference.py
+│       ├── business_predictor.py
+│       ├── retention_engine.py
+│       └── llm_report.py
 │
-│   └── pages/
+├── dataset/
+│   │
+│   ├── Customer Loyalty History.csv
+│   ├── Customer Flight Activity.csv
+│   ├── Calendar.csv
+│   ├── Airline Loyalty Data Dictionary.csv
+│   │
+│   ├── graphs/
+│   │   │
+│   │   ├── baseline/
+│   │   ├── cluster_analysis/
+│   │   ├── forecast_baseline/
+│   │   ├── future_value_model/
+│   │   ├── hybrid_model/
+│   │   ├── lstm_encoder/
+│   │   ├── tensors_csv/
+│   │   └── csv/
+│   │
+│   └── scripts/
+│       │
+│       ├── data.py
+│       ├── features.py
+│       ├── tensors.py
+│       ├── training_dataset.py
+│       └── future_value_data.py
 │
-│       ├── 01_Overview.py
-│       ├── 02_Forecast.py
-│       ├── 03_Retention_Strategy.py
-│       ├── 04_AI_Executive_Summary.py
-│       ├── 05_Customer_Message.py
-│       └── 06_Reports_Export.py
+├── training/
+│   │
+│   ├── xg_baseline.py
+│   ├── hybrid.py
+│   ├── regressor.py
+│   ├── lstm_embeddings.py
+│   └── ananlysis.py
 │
-├── testing/
-│
-│   ├── inference.py
-│   ├── business_predictor.py
-│   └── llm_report.py
-│
-├── models/
-│
-├── encoders/
-│
-├── datasets/
-│
-├── reports/
-│
-├── requirements.txt
-│
-└── README.md
+└── .refact/
 ```
 
+### Folder Descriptions
+
+| Folder             | Description                                                                           |
+| ------------------ | ------------------------------------------------------------------------------------- |
+| `app/`             | Streamlit dashboard application                                                       |
+| `app/pages/`       | Multi-page business intelligence dashboard                                            |
+| `app/testing/`     | Inference, business profiling, retention engine, and LLM pipeline                     |
+| `dataset/`         | Raw airline datasets provided for the challenge                                       |
+| `dataset/graphs/`  | Model outputs, feature importance plots, embeddings, metrics, and generated artifacts |
+| `dataset/scripts/` | Data preparation and feature engineering scripts                                      |
+| `training/`        | Training pipelines for LSTM, XGBoost, Hybrid Models, and Forecasting                  |
+| `.refact/`         | Development environment metadata                                                      |
+
+```
 # 📊 Dashboard Pages
 
 ## 🏠 Home
