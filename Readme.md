@@ -699,22 +699,6 @@ ollama run qwen3:8b
 streamlit run Home.py
 ```
 
----
-
-# 🔮 Future Enhancements
-
-- PDF Report Generation
-- Excel Report Export
-- Interactive Plotly Dashboards
-- SHAP Explainability
-- Real-Time API Deployment
-- Cloud Deployment
-- Multi-Airline Support
-- Customer Cohort Analysis
-- Automated Campaign Generation
-
----
-
 # 👨‍💻 Authors
 
 ### Shikhar Bhandari
