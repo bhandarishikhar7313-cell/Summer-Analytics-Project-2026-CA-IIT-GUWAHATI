@@ -1,0 +1,22 @@
+feature,importance
+Enrollment Type,0.46351
+Total Flights_sum,0.1773554
+Enrollment Year,0.108783156
+Total Flights_mean,0.05890165
+Distance_sum,0.027620386
+Enrollment Month,0.02348788
+Total Flights_max,0.01889266
+Total Flights_std,0.016298136
+Points Accumulated_sum,0.015612809
+Points Accumulated_mean,0.009580301
+Distance_mean,0.008098819
+redemption_ratio,0.0077784946
+Gender,0.0077303117
+Points Redeemed_mean,0.0075322855
+Marital Status,0.007435925
+CLV,0.0074216435
+Points Redeemed_sum,0.007161136
+Salary,0.0070690066
+Loyalty Card,0.007037348
+Education,0.0064712246
+cluster,0.0062215244
